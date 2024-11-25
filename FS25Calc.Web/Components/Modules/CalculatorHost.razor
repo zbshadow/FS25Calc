@@ -1,0 +1,42 @@
+﻿@using FS25Calc.DataLayer.Models
+<MudPaper Height="800px" Width="100%">
+    <MudContainer MaxWidth="MaxWidth.ExtraLarge">
+        <div>
+            <div class="d-inline-flex flex-column ma-3" style="width: 45%;">
+                <h3>Crop Yield</h3>
+                <MudSelect @bind-Value=_crop
+                           T="Crop"
+                           ToStringFunc="converter"
+                           Label="Crop Type"
+                           Variant=Variant.Text
+                           AnchorOrigin="Origin.BottomCenter"
+                           Margin="Margin.Normal">
+                    @foreach (Crop crop in Crops)
+                    {
+                        <MudSelectItem Value=crop></MudSelectItem>
+                    }
+                </MudSelect>
+
+
+                <MudTextField @bind-Value="FieldSize" Label="Field Size" Variant=Variant.Text />
+
+                <MudCheckBox @bind-Value="Lime" Label="Limed"></MudCheckBox>
+                <MudCheckBox @bind-Value="Fertilized" Label="Fertilized"></MudCheckBox>
+                <MudCheckBox @bind-Value="FertilizedSecond" Label="Fertilized 2nd"></MudCheckBox>
+                <MudCheckBox @bind-Value="Rolled" Label="Rolled"></MudCheckBox>
+                <MudCheckBox @bind-Value="Plowed" Label="Plowed"></MudCheckBox>
+                <MudCheckBox @bind-Value="Mulched" Label="Mulched"></MudCheckBox>
+                <MudCheckBox @bind-Value="Weeded" Label="Weeded"></MudCheckBox>
+            </div>
+
+            <div class="d-inline-flex flex-column ma-3" style="width: 45%;">
+                <h3>Results</h3>
+                @if(_crop != null)
+                {
+                    <H3>Yield: </H3> <p>@_Yield</p>
+                }
+            </div>
+        </div>
+
+    </MudContainer>
+</MudPaper>
