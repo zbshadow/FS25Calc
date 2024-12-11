@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FS25Calc.DataLayer", "FS25Calc.DataLayer\FS25Calc.DataLayer.csproj", "{E0D87A96-76F9-4D46-B4BA-254AE31D12BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FS25Calc.Web", "FS25Calc.Web\FS25Calc.Web.csproj", "{A4AAE87B-C33C-46AE-B8F8-B7BA04772A18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0D87A96-76F9-4D46-B4BA-254AE31D12BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D87A96-76F9-4D46-B4BA-254AE31D12BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D87A96-76F9-4D46-B4BA-254AE31D12BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D87A96-76F9-4D46-B4BA-254AE31D12BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4AAE87B-C33C-46AE-B8F8-B7BA04772A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4AAE87B-C33C-46AE-B8F8-B7BA04772A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4AAE87B-C33C-46AE-B8F8-B7BA04772A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4AAE87B-C33C-46AE-B8F8-B7BA04772A18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD6A7576-C9BE-44C9-8DB4-DA55D975414F}
+	EndGlobalSection
+EndGlobal
